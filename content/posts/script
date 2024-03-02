@@ -1,8 +1,0 @@
-#!/bin/bash
-
-for cmd in "$@"; do
-	mkdir "$cmd"
-	cmd_up=$(echo "$cmd" | tr '[:lower:]' '[:upper:]')
-	echo -e "---\n---\n## $cmd_up" > $cmd/index.md
-	echo "$cmd: success!"
-done
