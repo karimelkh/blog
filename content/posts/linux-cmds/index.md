@@ -12,7 +12,7 @@ darft: false
 
 Basic commands for navigating the linux filesystem:
 
-- [pwd](#) - Print Working Directory
+- [pwd](pwd) - Print Working Directory
 - [ls](#)  - list current directory (folder) content
 - [cd](#)  - Change Directory 
 - [whoami](#) - print effective user name
