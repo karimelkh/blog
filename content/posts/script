@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for cmd in "$@"; do
+	mkdir "$cmd"
+	cmd_up=$(echo "$cmd" | tr '[:lower:]' '[:upper:]')
+	echo "---" > $cmd/index.md
+	echo "title: \"$cmd command page\"" >> $cmd/index.md
+	echo "---" >> $cmd/index.md
+	echo "## $cmd" >> $cmd/index.md
+	convert -size 1920x1080 xc:black -fill white -gravity center -pointsize 150 -annotate +0+0 "$cmd" ./$cmd/feature.png
+	echo "$cmd: success!"
+done

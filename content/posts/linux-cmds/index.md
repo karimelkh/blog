@@ -8,76 +8,76 @@ darft: false
 
 ## Basic
 
-### Navigating the Linux Filesystem
+### Navigating the filesystem
 
 Basic commands for navigating the linux filesystem:
 
-- [pwd](../pwd) - Print Working Directory
-- [ls](#)  - list current directory (folder) content
-- [cd](#)  - Change Directory 
-- [whoami](#) - print effective user name
+- [pwd](/posts/pwd) - Print Working Directory
+- [ls](/posts/ls)  - list current directory (folder) content
+- [cd](/posts/cd)  - Change Directory 
+- [whoami](/posts/whoami) - print effective user name
 
 
-### Finding Stuff
+### Searching
 
 Commands for finding files, directories, commands (binary files), ... that matche
 a specific pattern:
 
-- [locate](#) - __*LOCATE*__
-- [whereis](#) - locate the binary, source, and manual page files for a command 
-- [find](#) - search for files in a directory hierarchy
-- [grep](#) - print lines that match patterns
+- [locate](/posts/locate) - search for files and directories
+- [whereis](/posts/whereis) - locate the binary, source, and manual page files for a command 
+- [find](/posts/find) - search for files in a directory hierarchy
+- [grep](/posts/grep) - print lines that match patterns
 
 
 ### Files Manipualtion
 
 Commands for creating, removing, editing, ... files:
 
-- [touch](#) - __*TOUCH*__
-- [cat](#) *- concatenate and print files*
-- [mkdir](#) - *create a directory*
-- [cp](#) - *copy files and directories*
-- [mv](#) - *move (rename) files*
-- [rm](#) - *remove files or directories*
-- [rmdir](#) - *remove empty directories*
+- [touch](/posts/touch) - creating files, but its primarly use is changing file timestamps
+- [cat](/posts/cat) - concatenate and print files
+- [mkdir](/posts/mkdir) - create a directory
+- [cp](/posts/cp) - copy files and directories
+- [mv](/posts/mv) - move (rename) files
+- [rm](/posts/rm) - remove files or directories
+- [rmdir](/posts/rmdir) - remove empty directories
 
 
 ### Text manipulation
 
 Commands for manipulating text files:
 
-- [head](#) - *output the first part of files*
-- [tail](#) - *output the last part of files*
-- [nl](#) - *number lines of files*
-- [sed](#) - *stream editor for filtering and transforming text*
-- [awk](#) - *pattern scanning and processing language*
-- [more](#) - *display files on a page-by-page basis*
-- [less](#) - *opposite of [more](#)*
+- [head](/posts/head) - output the first part of files
+- [tail](/posts/tail) - output the last part of file
+- [nl](/posts/nl) - number lines of files
+- [sed](/posts/sed) - stream editor for filtering and transforming text
+- [awk](/posts/awk) - pattern scanning and processing language
+- [more](/posts/more) - display files on a page-by-page basis
+- [less](/posts/less) - opposite of [more](/posts/more)
 
 
 ### Managing networks
 
 Commands for managing networks:
 
-- [ifconfig](#) - *network interface configurator*
-- [iwconfig](#) - *wireless network interface configurator*
-- [dhclient](#) - *Dynamic Host Configuration Protocol Client*
-- [dig](#) - *DNS lookup utility*
+- [ifconfig](/posts/ifconfig) - network interface configurator
+- [iwconfig](/posts/iwconfig) - wireless network interface configurator
+- [dhclient](/posts/dhclient) - Dynamic Host Configuration Protocol Client
+- [dig](/posts/dig) - DNS lookup utility
 
 
 ### Software manipulation
 
 Commands for installing and uninstalling software:
 
-- [apt](#) - *[Debian](https://en.wikipedia.org/wiki/Debian)-based package manager*
-- [dnf](#) - *package manager for [Fedora](en.wikipedia.org/wiki/Fedora_Linux) and [RedHat](en.wikipedia.org/wiki/Red_Hat) operating systems*
-- [pacman](#) - *package manager for "I use [Arch](en.wikipedia.org/wiki/Arch_Linux) btw" people*
-<!-- - [git](#) - ** -->
+- [apt](/posts/apt) - [Debian](https://en.wikipedia.org/wiki/Debian)-based package manager
+- [dnf](/posts/dnf) - package manager for [Fedora](en.wikipedia.org/wiki/Fedora_Linux) and [RedHat](en.wikipedia.org/wiki/Red_Hat) operating systems
+- [pacman](/posts/pacman) - package manager for "I use [Arch](en.wikipedia.org/wiki/Arch_Linux) btw" people
+<!-- - [git](/posts/) - ** -->
 
 
 ## Advanced
 
-### Controlling file and directory permissions
+### Controlling permissions
 
 
 
