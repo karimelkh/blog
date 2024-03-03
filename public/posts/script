@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for cmd in "$@"; do
+	mkdir "$cmd"
+	cmd_up=$(echo "$cmd" | tr '[:lower:]' '[:upper:]')
+	echo "---" > $cmd/index.md
+	echo "title: \"$cmd command page\"" >> $cmd/index.md
+	echo "---" >> $cmd/index.md
+	echo "## $cmd" >> $cmd/index.md
+	echo "$cmd: success!"
+done
