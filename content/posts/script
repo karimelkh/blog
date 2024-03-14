@@ -1,12 +1,27 @@
 #!/bin/bash
 
+hlwd() {
+	local word="$1"
+	echo -ne " \e[91m$word\e[0m "
+}
+
 for cmd in "$@"; do
 	mkdir "$cmd"
 	cmd_up=$(echo "$cmd" | tr '[:lower:]' '[:upper:]')
+	desc=$(whatis $cmd | head -1 | sed 's/.*- //')
 	echo "---" > $cmd/index.md
 	echo "title: \"$cmd command page\"" >> $cmd/index.md
+	echo "description: \"$desc\"" >> $cmd/index.md
 	echo "---" >> $cmd/index.md
 	echo "## $cmd" >> $cmd/index.md
+	echo "**Description:** $desc<br>" >> $cmd/index.md
+#	echo "**Example output:**" >> $cmd/index.md
+#	echo "\`\`\`sh" >> $cmd/index.md
+#	output=$($cmd 2>&1)
+#	echo "$output" >> $cmd/index.md
+#	echo "\`\`\`" >> $cmd/index.md
 	convert -size 1920x1080 xc:black -fill white -gravity center -pointsize 150 -annotate +0+0 "$cmd" ./$cmd/feature.png
-	echo "$cmd: success!"
+	echo -n "a dirctory for"
+	hlwd $cmd
+	echo -e "was created successfully!"
 done
